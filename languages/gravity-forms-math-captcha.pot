@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Gravity Forms Math Captcha 1.0.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/plugins/plugin-name\n"
-"POT-Creation-Date: 2014-07-17 11:41-0800\n"
-"PO-Revision-Date: 2014-07-17 11:41-0800\n"
+"POT-Creation-Date: 2014-08-06 15:38-0800\n"
+"PO-Revision-Date: 2014-08-06 15:38-0800\n"
 "Last-Translator: FULL NAME <email@example.com>\n"
 "Language-Team: LANGUAGE <translations@example.com >\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.5\n"
+"X-Generator: Poedit 1.6.6\n"
 "X-Poedit-KeywordsList: __;_e;_n;_x;esc_html_e;esc_html__;esc_attr_e;"
 "esc_attr__;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_x:1,2c;_n:1,2\n"
 "X-Poedit-Basepath: ../\n"
@@ -25,125 +25,129 @@ msgid ""
 msgstr ""
 
 #: admin/class-gravity-forms-math-captcha-admin.php:81
-msgid "Please install Gravity Form now."
+msgid "Please install Gravity Forms now."
 msgstr ""
 
-#: admin/class-gravity-forms-math-captcha-admin.php:100
-#: admin/class-gravity-forms-math-captcha-admin.php:116
+#: admin/class-gravity-forms-math-captcha-admin.php:114
+#: admin/class-gravity-forms-math-captcha-admin.php:130
 msgid "Math Captcha"
 msgstr ""
 
-#: admin/class-gravity-forms-math-captcha-admin.php:155
-#: admin/class-gravity-forms-math-captcha-admin.php:174
+#: admin/class-gravity-forms-math-captcha-admin.php:169
+#: admin/class-gravity-forms-math-captcha-admin.php:188
 msgid "Math Captcha Display"
 msgstr ""
 
-#: admin/class-gravity-forms-math-captcha-admin.php:159
+#: admin/class-gravity-forms-math-captcha-admin.php:173
 msgid "A mix of numbers and words"
 msgstr ""
 
-#: admin/class-gravity-forms-math-captcha-admin.php:160
+#: admin/class-gravity-forms-math-captcha-admin.php:174
 msgid "Numbers only"
 msgstr ""
 
-#: admin/class-gravity-forms-math-captcha-admin.php:161
+#: admin/class-gravity-forms-math-captcha-admin.php:175
 msgid "Words only"
 msgstr ""
 
-#: admin/class-gravity-forms-math-captcha-admin.php:174
+#: admin/class-gravity-forms-math-captcha-admin.php:188
 msgid ""
 "Select how to display the math-based captcha. The numbers in the math "
 "question can be displayed as numerals, words, or a mix of both."
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:115
-msgid "one"
+msgid "zero"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:116
-msgid "two"
+msgid "one"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:117
-msgid "three"
+msgid "two"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:118
-msgid "four"
+msgid "three"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:119
-msgid "five"
+msgid "four"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:120
-msgid "six"
+msgid "five"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:121
-msgid "seven"
+msgid "six"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:122
-msgid "eight"
+msgid "seven"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:123
-msgid "nine"
+msgid "eight"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:124
-msgid "ten"
+msgid "nine"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:125
-msgid "eleven"
+msgid "ten"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:126
-msgid "twelve"
+msgid "eleven"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:127
-msgid "thirteen"
+msgid "twelve"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:128
-msgid "fourteen"
+msgid "thirteen"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:129
-msgid "fifteen"
+msgid "fourteen"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:130
-msgid "sixteen"
+msgid "fifteen"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:131
-msgid "seventeen"
+msgid "sixteen"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:132
-msgid "eighteen"
+msgid "seventeen"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:133
-msgid "nineteen"
+msgid "eighteen"
 msgstr ""
 
 #: public/class-gravity-forms-math-captcha.php:134
+msgid "nineteen"
+msgstr ""
+
+#: public/class-gravity-forms-math-captcha.php:135
 msgid "twenty"
 msgstr ""
 
-#: public/class-gravity-forms-math-captcha.php:163
+#: public/class-gravity-forms-math-captcha.php:164
 msgid "minus"
 msgstr ""
 
-#: public/class-gravity-forms-math-captcha.php:170
+#: public/class-gravity-forms-math-captcha.php:171
 msgid "plus"
 msgstr ""
 
-#: public/class-gravity-forms-math-captcha.php:283
+#: public/class-gravity-forms-math-captcha.php:284
 msgid "Sorry, that wasn't the correct answer. Please try again."
 msgstr ""

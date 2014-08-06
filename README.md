@@ -26,6 +26,9 @@ Upon successful activation, you'll find the Math Captcha field under the "Advanc
 
 ## Changelog
 
+### 1.0.1
+* Fix bug where "0" was not accepted as a correct answer.
+
 ### 1.0
 * Plugin initial release.
 

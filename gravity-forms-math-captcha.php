@@ -12,7 +12,7 @@
  * Plugin Name:       Gravity Forms Math Captcha
  * Plugin URI:        http://mandiwise.com/wordpress/gravity-forms-math-captcha/
  * Description:       Add a simple, non-image-based math captcha field to Gravity Forms.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Mandi Wise
  * Author URI:        http://mandiwise.com
  * Text Domain:       gravity-forms-math-captcha

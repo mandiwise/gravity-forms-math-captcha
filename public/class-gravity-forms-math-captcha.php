@@ -112,6 +112,7 @@ class Gravity_Forms_Math_Captcha {
 
       // Build and array of numbers and their corresponding word versions.
       $word_numbers = array(
+			0 => __( 'zero', $this->plugin_slug ),
          1 => __( 'one', $this->plugin_slug ),
          2 => __( 'two', $this->plugin_slug ),
          3 => __( 'three', $this->plugin_slug ),
