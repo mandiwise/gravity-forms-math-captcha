@@ -211,11 +211,18 @@ class Gravity_Forms_Math_Captcha {
 
          // Render the math challenge question.
          $display_type = isset( $field['field_math_captcha_type'] ) ? $field['field_math_captcha_type'] : 'mixed';
-         $equation = $this->generate_equation( $display_type );
+			$equation = $this->generate_equation( $display_type );
          $question = $equation[0] . ' ' . $equation[1] . ' ' . $equation[2];
-         if( $equation[1] != "+" && $equation[0] < $equation[2] ) {
-            $question = $equation[2] . ' ' . $equation[1] . ' ' . $equation[0];
-         }
+			// Fix minus bug in RTL sites
+			if( is_rtl() ) {
+				if( is_numeric( $equation[2] ) && is_numeric( $equation[0] ) ) {
+					if( ( $equation[1] != "+" && $equation[1] != "plus" ) && ( $equation[2] < $equation[0] ) ) {
+						$question = $equation[2] . ' ' . $equation[1] . ' ' . $equation[0];
+					}
+				} else {
+					// For words
+				}
+			}
 
          // Store the solution in a hex-encoded string.
          $answers = $equation[3] . ',' . $equation[4];
