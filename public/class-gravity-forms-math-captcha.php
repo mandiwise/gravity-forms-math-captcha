@@ -211,8 +211,18 @@ class Gravity_Forms_Math_Captcha {
 
          // Render the math challenge question.
          $display_type = isset( $field['field_math_captcha_type'] ) ? $field['field_math_captcha_type'] : 'mixed';
-         $equation = $this->generate_equation( $display_type );
+			$equation = $this->generate_equation( $display_type );
          $question = $equation[0] . ' ' . $equation[1] . ' ' . $equation[2];
+			// Fix minus bug in RTL sites
+			if( is_rtl() ) {
+				if( is_numeric( $equation[2] ) && is_numeric( $equation[0] ) ) {
+					if( ( $equation[1] != "+" && $equation[1] != "plus" ) && ( $equation[2] < $equation[0] ) ) {
+						$question = $equation[2] . ' ' . $equation[1] . ' ' . $equation[0];
+					}
+				} else {
+					// For words
+				}
+			}
 
          // Store the solution in a hex-encoded string.
          $answers = $equation[3] . ',' . $equation[4];
@@ -226,16 +236,29 @@ class Gravity_Forms_Math_Captcha {
          $tab_index = GFCommon::get_tabindex();
          $css = !empty( $field['cssClass'] ) ? ' ' . $field['cssClass'] : '';
 
-         return sprintf(
-            "<div class='ginput_container'>%s &#61; <input name='input_%d' id='input_%s' type='text' class='%s' %s ><input name='math_captcha_answers_%d' type='hidden' value='%s'></div>",
-            $question,
-            $field['id'],
-            $input_id,
-            $field['type'] . ' small' . esc_attr( $css ),
-            $tab_index,
-            $field['id'],
-            $answers_no_spam
-         );
+         if( is_rtl() ) {
+            return sprintf(
+               "<div class='ginput_container'><input name='input_%d' id='input_%s' type='text' class='%s' %s > &#61; %s <input name='math_captcha_answers_%d' type='hidden' value='%s'></div>",
+               $field['id'],
+               $input_id,
+               $field['type'] . ' small' . esc_attr( $css ),
+               $tab_index,
+               $question,
+               $field['id'],
+               $answers_no_spam
+            );
+         } else {
+            return sprintf(
+               "<div class='ginput_container'>%s &#61; <input name='input_%d' id='input_%s' type='text' class='%s' %s ><input name='math_captcha_answers_%d' type='hidden' value='%s'></div>",
+               $question,
+               $field['id'],
+               $input_id,
+               $field['type'] . ' small' . esc_attr( $css ),
+               $tab_index,
+               $field['id'],
+               $answers_no_spam
+		      );
+         }
       }
       return $input;
    }
